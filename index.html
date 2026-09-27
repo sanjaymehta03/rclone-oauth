@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Google Drive access for my own account</title>
+<style>
+  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+         line-height: 1.6; max-width: 44rem; margin: 0 auto; padding: 2rem 1.25rem; }
+  h1 { font-size: 1.5rem; margin-bottom: 0.25rem; }
+  .sub { color: #555; margin-top: 0; }
+  h2 { font-size: 1.1rem; margin-top: 2rem; }
+  code { background: #f4f4f5; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.9em; }
+  ul { padding-left: 1.2rem; }
+  .note { background: #f8f9fa; border-left: 3px solid #adb5bd; padding: 0.75rem 1rem; margin: 1.5rem 0; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #e4e4e7;
+           color: #666; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+
+<h1>Google Drive access for my own account</h1>
+<p class="sub">Personal OAuth client &mdash; not a service, not available to anyone else.</p>
+
+<p>
+This page exists to document an OAuth application that I created for my own use.
+The application is a <a href="https://rclone.org/">rclone</a> client ID, which lets the
+rclone file-sync tool access my own Google Drive from my own computer.
+</p>
+
+<h2>What it does</h2>
+<p>
+rclone mounts my Google Drive as a filesystem, so I can read and write my files
+from the command line and from applications that accept filesystem paths. The
+Google Drive API is used only to list, read, and write the files in my Drive.
+</p>
+
+<h2>What it is not</h2>
+<ul>
+  <li>Not a product or service. Nobody else uses it.</li>
+  <li>Not published to any app store, directory, or marketplace.</li>
+  <li>Not affiliated with, endorsed by, or supported by Google.</li>
+</ul>
+
+<h2>Who can sign in</h2>
+<p>
+Only me. The OAuth consent screen is configured for personal use, and I am the
+only test user. The client ID exists so that my own machine can authenticate as
+my own Google account. Google user data obtained through this application is
+never shared with any third party.
+</p>
+
+<div class="note">
+<strong>Summary:</strong> one person's rclone client, used to sync that person's
+files to that person's computer. No data leaves my machine.
+</div>
+
+<h2>Policies</h2>
+<ul>
+  <li><a href="/privacy.html">Privacy Policy</a> &mdash; what data is accessed and where it goes.</li>
+  <li><a href="/terms.html">Terms of Service</a> &mdash; terms of use.</li>
+</ul>
+
+<footer>
+  Last updated: 27 September 2026.
+</footer>
+
+</body>
+</html>

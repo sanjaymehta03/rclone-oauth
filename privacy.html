@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy &mdash; Google Drive access for my own account</title>
+<style>
+  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+         line-height: 1.6; max-width: 44rem; margin: 0 auto; padding: 2rem 1.25rem; }
+  h1 { font-size: 1.5rem; margin-bottom: 0.25rem; }
+  .sub { color: #555; margin-top: 0; }
+  h2 { font-size: 1.1rem; margin-top: 2rem; }
+  code { background: #f4f4f5; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.9em; }
+  ul { padding-left: 1.2rem; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #e4e4e7;
+           color: #666; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="sub">Google Drive access for my own account &mdash; last updated 27 September 2026.</p>
+
+<h2>Who runs this</h2>
+<p>
+This application is a personal OAuth client that I (Sanjay Mehta) created for my
+own use. It is not a service. Nobody else has an account, and nobody else can
+sign in.
+</p>
+
+<h2>What data is accessed</h2>
+<p>
+The application uses the Google Drive API to access the contents of my own Google
+Drive account &mdash; specifically, to list, read, and write files so that the
+<code>rclone</code> file-sync tool can mirror them to my own computer.
+</p>
+<p>
+The following OAuth scopes are requested:</p>
+<ul>
+  <li><code>https://www.googleapis.com/auth/drive</code> &mdash; read and write files in my Drive.</li>
+  <li><code>https://www.googleapis.com/auth/docs</code> &mdash; read and write Google Docs.</li>
+  <li><code>https://www.googleapis.com/auth/drive.metadata.readonly</code> &mdash; read file and folder metadata.</li>
+</ul>
+<p>
+No other Google data is accessed. The application does not read Gmail, Calendar,
+Contacts, location, or any other data source.</p>
+
+<h2>Where that data goes</h2>
+<p>
+Nowhere. Files are transferred between my Google Drive account and my own computer
+and nowhere else. The application contains no analytics, no telemetry, no
+advertising, and no third-party server. It does not share, sell, or transfer any
+Google user data to anyone.</p>
+
+<h2>Storage and retention</h2>
+<p>
+Authentication tokens are stored locally in a configuration file on my own
+computer, readable only by me. Files synced by rclone are stored in ordinary
+directories on my own computer. Nothing is retained by any third party.</p>
+
+<h2>Third parties</h2>
+<p>
+There are none. This application does not use third-party analytics, advertising
+or tracking services.</p>
+
+<h2>Children</h2>
+<p>
+This application is not directed at children and collects no data from anyone.</p>
+
+<h2>Contact</h2>
+<p>
+Questions about this policy can be raised on
+<a href="https://github.com/sanjaymehta03/rclone-oauth">this site's repository</a>.</p>
+
+<footer>
+  <a href="/">Back to the home page</a>
+</footer>
+
+</body>
+</html>
